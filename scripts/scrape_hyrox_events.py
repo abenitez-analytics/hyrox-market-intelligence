@@ -1,30 +1,3 @@
-"""
-scrape_hyrox_events.py
-------------------------
-Phase 2b -- Data collection layer for the HYROX BI project.
-
-Scrapes https://www.roxupdates.com/cities/ -- an unofficial fan site that
-compiles the full 2026 HYROX event calendar (city, dates, venue,
-registration status) in one static, consistently-formatted page. This
-was chosen over the official hyrox.com/find-my-race/ page because that
-page's booking flow is very likely rendered client-side (JS/API-driven),
-which a simple requests+BeautifulSoup scraper can't reliably read,
-whereas this page is plain server-rendered HTML.
-
-NOTE ON SOURCE: this is an unofficial, fan-run source, not HYROX GmbH
-itself. We're extracting FACTS (city, date, venue, status) which aren't
-copyrightable expression -- not reproducing their written commentary/
-guide text. Still, treat this as a secondary source: if you find the
-official hyrox.com feed or a more authoritative source later, prefer it,
-and note this data's provenance in your project write-up either way.
-
-Usage:
-    pip install requests beautifulsoup4 pandas --break-system-packages
-    python scrape_hyrox_events.py
-
-Output: hyrox_events_raw.csv, matching a subset of fact_event's grain
-(brand is always "HYROX" here -- this source doesn't cover competitors).
-"""
 
 import logging
 import re
@@ -147,22 +120,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-# ---------------------------------------------------------------------
-# Run this snippet separately, INSIDE a Fabric notebook attached to your
-# Lakehouse, after uploading hyrox_events_raw.csv to Files/bronze/events/
-# ---------------------------------------------------------------------
-LOAD_TO_LAKEHOUSE_SNIPPET = """
-df = spark.read.option("header", True).option("inferSchema", True) \\
-    .csv("Files/bronze/events/hyrox_events_raw.csv")
-
-df.write.format("delta").mode("overwrite") \\
-    .saveAsTable("bronze_hyrox_events")
-
-display(spark.sql('''
-    SELECT status, COUNT(*) AS event_count
-    FROM bronze_hyrox_events
-    GROUP BY status
-    ORDER BY event_count DESC
-'''))
-"""
