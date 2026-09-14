@@ -1,0 +1,122 @@
+event_id,city_name,country,region,registration_status,events_in_country,full_date,cluster,cluster_label
+21,Buenos Aires,Argentina,South America,Past,1,2026-06-13,0,Active / Near-Term Markets
+19,Brisbane,Australia,APAC,Past,5,2026-04-09,0,Active / Near-Term Markets
+20,Brisbane,Australia,APAC,Past,5,2026-04-11,0,Active / Near-Term Markets
+85,Perth,Australia,APAC,Past,5,2026-08-21,0,Active / Near-Term Markets
+105,Sydney,Australia,APAC,On Sale,5,2026-07-01,0,Active / Near-Term Markets
+116,Vienna,Austria,Europe,Past,1,2026-02-06,0,Active / Near-Term Markets
+68,Mechelen,Belgium,Europe,Past,2,2026-03-26,0,Active / Near-Term Markets
+35,Fortaleza,Brazil,South America,Past,4,2026-02-28,0,Active / Near-Term Markets
+106,São Paulo,Brazil,South America,Past,4,2026-04-25,0,Active / Near-Term Markets
+82,Ottawa,Canada,North America,Past,3,2026-05-14,0,Active / Near-Term Markets
+10,Beijing,China,APAC,Past,10,2026-03-21,0,Active / Near-Term Markets
+98,Shanghai,China,APAC,Past,10,2026-05-16,0,Active / Near-Term Markets
+120,Wuhan,China,APAC,Past,10,2026-04-11,0,Active / Near-Term Markets
+30,Copenhagen,Denmark,Europe,Past,1,2026-03-13,0,Active / Near-Term Markets
+46,Helsinki,Finland,Europe,Past,2,2026-05-09,0,Active / Near-Term Markets
+64,Lyon,France,Europe,Past,7,2026-05-20,0,Active / Near-Term Markets
+78,Nice,France,Europe,Past,7,2026-02-12,0,Active / Near-Term Markets
+83,Paris,France,Europe,Past,7,2026-04-23,0,Active / Near-Term Markets
+111,Toulouse,France,Europe,Past,7,2026-03-19,0,Active / Near-Term Markets
+13,Berlin,Germany,Europe,Past,6,2026-05-22,0,Active / Near-Term Markets
+29,Cologne,Germany,Europe,Past,6,2026-04-16,0,Active / Near-Term Markets
+48,Hong Kong,Hong Kong (China),APAC,Past,1,2026-05-08,0,Active / Near-Term Markets
+12,Bengaluru,India,APAC,Past,3,2026-04-11,0,Active / Near-Term Markets
+74,Mumbai,India,APAC,Sold Out,3,2026-09-18,0,Active / Near-Term Markets
+76,New Delhi,India,APAC,On Sale,3,2026-07-24,0,Active / Near-Term Markets
+53,Jakarta,Indonesia,APAC,Past,1,2026-06-27,0,Active / Near-Term Markets
+16,Bologna,Italy,Europe,Past,5,2026-04-04,0,Active / Near-Term Markets
+90,Rimini,Italy,Europe,Past,5,2026-05-28,0,Active / Near-Term Markets
+112,Turin,Italy,Europe,Past,5,2026-01-30,0,Active / Near-Term Markets
+80,Osaka,Japan,APAC,Past,2,2026-01-30,0,Active / Near-Term Markets
+89,Riga,Latvia,Europe,Past,1,2026-05-30,0,Active / Near-Term Markets
+23,Cancún,Mexico,North America,Past,6,2026-03-14,0,Active / Near-Term Markets
+41,Guadalajara,Mexico,North America,Past,6,2026-02-07,0,Active / Near-Term Markets
+73,Monterrey,Mexico,North America,Past,6,2026-04-18,0,Active / Near-Term Markets
+88,Puebla,Mexico,North America,Past,6,2026-05-16,0,Active / Near-Term Markets
+2,Amsterdam,Netherlands,Europe,Past,5,2026-01-21,0,Active / Near-Term Markets
+45,Heerenveen,Netherlands,Europe,Past,5,2026-05-14,0,Active / Near-Term Markets
+93,Rotterdam,Netherlands,Europe,Past,5,2026-04-15,0,Active / Near-Term Markets
+5,Auckland,New Zealand,APAC,Past,1,2026-01-29,0,Active / Near-Term Markets
+57,Katowice,Poland,Europe,Past,4,2026-02-21,0,Active / Near-Term Markets
+117,Warsaw,Poland,Europe,Past,4,2026-04-16,0,Active / Near-Term Markets
+60,Lisbon,Portugal,Europe,Past,1,2026-05-01,0,Active / Near-Term Markets
+101,Singapore,Singapore,APAC,Past,1,2026-04-03,0,Active / Near-Term Markets
+24,Cape Town,South Africa,Africa,Past,4,2026-04-03,0,Active / Near-Term Markets
+54,Johannesburg,South Africa,Africa,Past,4,2026-05-30,0,Active / Near-Term Markets
+50,Incheon,South Korea,APAC,Past,2,2026-05-15,0,Active / Near-Term Markets
+8,Barcelona,Spain,Europe,Past,6,2026-05-14,0,Active / Near-Term Markets
+14,Bilbao,Spain,Europe,Past,6,2026-02-07,0,Active / Near-Term Markets
+66,Malaga,Spain,Europe,Past,6,2026-04-16,0,Active / Near-Term Markets
+103,Stockholm,Sweden,Europe,Past,2,2026-06-18,0,Active / Near-Term Markets
+102,St. Gallen,Switzerland,Europe,Past,2,2026-01-16,0,Active / Near-Term Markets
+108,Taipei,Taiwan,APAC,Past,1,2026-02-28,0,Active / Near-Term Markets
+6,Bangkok,Thailand,APAC,Past,2,2026-03-20,0,Active / Near-Term Markets
+7,Bangkok,Thailand,APAC,Past,2,2026-08-14,0,Active / Near-Term Markets
+51,Istanbul,Turkey,Europe,Past,3,2026-02-13,0,Active / Near-Term Markets
+26,Cardiff,United Kingdom,Europe,Past,7,2026-04-29,0,Active / Near-Term Markets
+40,Glasgow,United Kingdom,Europe,Past,7,2026-03-11,0,Active / Near-Term Markets
+61,London,United Kingdom,Europe,Past,7,2026-03-21,0,Active / Near-Term Markets
+62,London,United Kingdom,Europe,Past,7,2026-03-24,0,Active / Near-Term Markets
+67,Manchester,United Kingdom,Europe,Past,7,2026-01-21,0,Active / Near-Term Markets
+69,Melbourne,Australia,APAC,Scheduled,5,2026-12-09,1,Standalone Early-Stage Markets
+39,Gent,Belgium,Europe,Not Yet Announced,2,2026-12-17,1,Standalone Early-Stage Markets
+91,Rio de Janeiro,Brazil,South America,Not Yet Announced,4,2026-11-21,1,Standalone Early-Stage Markets
+107,São Paulo,Brazil,South America,Scheduled,4,2026-10-17,1,Standalone Early-Stage Markets
+110,Toronto,Canada,North America,Coming Soon,3,2026-10-01,1,Standalone Early-Stage Markets
+115,Vancouver,Canada,North America,Not Yet Announced,3,2026-12-18,1,Standalone Early-Stage Markets
+22,Cairo,Egypt,Africa,Scheduled,1,2026-11-14,1,Standalone Early-Stage Markets
+47,Helsinki,Finland,Europe,Scheduled,2,2026-12-18,1,Standalone Early-Stage Markets
+17,Bordeaux,France,Europe,On Sale,7,2026-09-30,1,Standalone Early-Stage Markets
+79,Nice,France,Europe,Not Yet Announced,7,2026-10-29,1,Standalone Early-Stage Markets
+84,Paris,France,Europe,Scheduled,7,2026-12-12,1,Standalone Early-Stage Markets
+34,Düsseldorf,Germany,Europe,Not Yet Announced,6,2026-11-11,1,Standalone Early-Stage Markets
+36,Frankfurt,Germany,Europe,Not Yet Announced,6,2026-12-10,1,Standalone Early-Stage Markets
+43,Hamburg,Germany,Europe,Not Yet Announced,6,2026-10-28,1,Standalone Early-Stage Markets
+56,Karlsruhe,Germany,Europe,Not Yet Announced,6,2026-10-01,1,Standalone Early-Stage Markets
+4,Athens,Greece,Europe,Scheduled,1,2026-09-05,1,Standalone Early-Stage Markets
+33,Dublin,Ireland,Europe,Not Yet Announced,1,2026-11-11,1,Standalone Early-Stage Markets
+72,Milan,Italy,Europe,Not Yet Announced,5,2026-12-05,1,Standalone Early-Stage Markets
+92,Rome,Italy,Europe,Not Yet Announced,5,2026-09-24,1,Standalone Early-Stage Markets
+28,Chiba,Japan,APAC,Not Yet Announced,2,2026-08-06,1,Standalone Early-Stage Markets
+58,Kuala Lumpur,Malaysia,APAC,Scheduled,1,2026-12-11,1,Standalone Early-Stage Markets
+1,Acapulco,Mexico,North America,Not Yet Announced,6,2026-09-05,1,Standalone Early-Stage Markets
+70,Mexico City,Mexico,North America,Not Yet Announced,6,2026-10-30,1,Standalone Early-Stage Markets
+65,Maastricht,Netherlands,Europe,On Sale,5,2026-09-17,1,Standalone Early-Stage Markets
+113,Utrecht,Netherlands,Europe,Not Yet Announced,5,2026-11-26,1,Standalone Early-Stage Markets
+81,Oslo,Norway,Europe,On Sale,1,2026-09-25,1,Standalone Early-Stage Markets
+37,Gdańsk,Poland,Europe,Coming Soon,4,2026-10-10,1,Standalone Early-Stage Markets
+87,Poznań,Poland,Europe,Not Yet Announced,4,2026-11-20,1,Standalone Early-Stage Markets
+25,Cape Town,South Africa,Africa,Not Yet Announced,4,2026-08-14,1,Standalone Early-Stage Markets
+55,Johannesburg,South Africa,Africa,Scheduled,4,2026-11-28,1,Standalone Early-Stage Markets
+97,Seoul,South Korea,APAC,Not Yet Announced,2,2026-11-14,1,Standalone Early-Stage Markets
+9,Barcelona,Spain,Europe,Scheduled,6,2026-11-12,1,Standalone Early-Stage Markets
+95,Santa Cruz de Tenerife,Spain,Europe,On Sale,6,2026-09-04,1,Standalone Early-Stage Markets
+114,Valencia,Spain,Europe,Not Yet Announced,6,2026-10-16,1,Standalone Early-Stage Markets
+104,Stockholm,Sweden,Europe,Scheduled,2,2026-12-10,1,Standalone Early-Stage Markets
+38,Geneva,Switzerland,Europe,Not Yet Announced,2,2026-10-09,1,Standalone Early-Stage Markets
+52,Istanbul,Turkey,Europe,Not Yet Announced,3,2026-08-01,1,Standalone Early-Stage Markets
+121,İzmir,Turkey,Europe,Scheduled,3,2026-09-19,1,Standalone Early-Stage Markets
+15,Birmingham,United Kingdom,Europe,Not Yet Announced,7,2026-10-27,1,Standalone Early-Stage Markets
+63,London,United Kingdom,Europe,Not Yet Announced,7,2026-12-02,1,Standalone Early-Stage Markets
+11,Beijing,China,APAC,Not Yet Announced,10,2026-09-12,2,Multi-City Expansion Push (early stage)
+27,Chengdu,China,APAC,Not Yet Announced,10,2026-08-01,2,Multi-City Expansion Push (early stage)
+42,Guangzhou,China,APAC,Not Yet Announced,10,2026-11-21,2,Multi-City Expansion Push (early stage)
+44,Hangzhou,China,APAC,On Sale,10,2026-07-04,2,Multi-City Expansion Push (early stage)
+96,Sanya,China,APAC,Scheduled,10,2026-12-05,2,Multi-City Expansion Push (early stage)
+99,Shanghai,China,APAC,Scheduled,10,2026-10-31,2,Multi-City Expansion Push (early stage)
+100,Shenzhen,China,APAC,Not Yet Announced,10,2026-08-15,2,Multi-City Expansion Push (early stage)
+3,Anaheim,USA,North America,Not Yet Announced,14,2026-12-04,2,Multi-City Expansion Push (early stage)
+18,Boston,USA,North America,Coming Soon,14,2026-10-08,2,Multi-City Expansion Push (early stage)
+31,Dallas,USA,North America,Not Yet Announced,14,2026-11-18,2,Multi-City Expansion Push (early stage)
+32,Denver,USA,North America,Not Yet Announced,14,2026-11-12,2,Multi-City Expansion Push (early stage)
+49,Houston,USA,North America,Past,14,2026-03-26,2,Multi-City Expansion Push (early stage)
+59,Las Vegas,USA,North America,Past,14,2026-02-20,2,Multi-City Expansion Push (early stage)
+71,Miami Beach,USA,North America,Past,14,2026-04-03,2,Multi-City Expansion Push (early stage)
+75,Nashville,USA,North America,Not Yet Announced,14,2026-12-10,2,Multi-City Expansion Push (early stage)
+77,New York City,USA,North America,Past,14,2026-05-28,2,Multi-City Expansion Push (early stage)
+86,Phoenix,USA,North America,Past,14,2026-01-29,2,Multi-City Expansion Push (early stage)
+94,Salt Lake City,USA,North America,Coming Soon,14,2026-09-18,2,Multi-City Expansion Push (early stage)
+109,Tampa,USA,North America,Not Yet Announced,14,2026-10-23,2,Multi-City Expansion Push (early stage)
+118,Washington DC,USA,North America,Past,14,2026-03-07,2,Multi-City Expansion Push (early stage)
+119,Washington DC,USA,North America,Coming Soon,14,2026-09-03,2,Multi-City Expansion Push (early stage)
