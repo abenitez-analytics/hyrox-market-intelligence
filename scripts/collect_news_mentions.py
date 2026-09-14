@@ -1,28 +1,3 @@
-"""
-collect_news_mentions.py
---------------------------
-Phase 2b -- Data collection layer for the HYROX BI project.
-
-Tracks daily NEWS MENTION VOLUME for each brand via the free, keyless
-GDELT 2.0 Doc API. This is the substitute signal for XENOM and ATHX
-Games, which don't have enough Google Trends search volume yet -- media
-coverage precedes search-engine demand for brand-new launches, so this
-is the earlier, more appropriate indicator for them.
-
-v2: calls the raw HTTP endpoint directly (no gdeltdoc wrapper). The
-wrapper was silently swallowing GDELT's 429 responses as blank
-exceptions. GDELT's actual limit, confirmed from a live 429 response
-body: "Please limit requests to one every 5 seconds." This version
-respects that pacing and retries on 429 with backoff.
-
-LIMITATION: GDELT's Doc API officially only reliably covers the LAST
-3 MONTHS of articles. That's fine for XENOM/ATHX Games (they're only
-months old anyway), so this defaults to a 90-day window.
-
-Usage:
-    pip install requests pandas --break-system-packages
-    python collect_news_mentions.py
-"""
 
 import logging
 import time
