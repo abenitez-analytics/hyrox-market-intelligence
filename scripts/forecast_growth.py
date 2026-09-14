@@ -1,7 +1,5 @@
 """
-forecast_growth.py
---------------------
-Phase 4 -- ML layer, part 1: forecast HYROX and CrossFit search-interest
+ML layer, part 1: forecast HYROX and CrossFit search-interest
 trajectory 26 weeks (~6 months) forward using Holt-Winters exponential
 smoothing (trend + yearly seasonality).
 
