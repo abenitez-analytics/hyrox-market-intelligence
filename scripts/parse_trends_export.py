@@ -1,23 +1,3 @@
-"""
-parse_trends_export.py
------------------------
-Phase 2 -- Data collection layer for the HYROX BI project.
-
-REPLACES collect_trends.py's live pytrends call, which is hitting persistent
-429s (Google has hardened the Trends backend; pytrends is an unofficial,
-frequently-broken wrapper around it). Search-interest data doesn't change
-intraday, so a manual export is a reasonable, defensible design choice --
-not automated, but this is a low-frequency dimension, not a live feed.
-
-How to get the input file:
-    1. Go to https://trends.google.com/trends/explore
-    2. Compare terms: HYROX, XENOM fitness, ATHX Games, CrossFit
-    3. Time range: Past 5 years | Location: Worldwide
-    4. Click the download icon on the "Interest over time" chart
-    5. Save the file as trends_export.csv in this same folder
-
-
-"""
 
 import logging
 from datetime import datetime, timezone
@@ -92,20 +72,4 @@ if __name__ == "__main__":
 
 
 
-# ---------------------------------------------------------------------
-# Run this snippet separately, INSIDE a Fabric notebook attached to your
-# Lakehouse, after uploading trends_raw.csv to Files/bronze/trends/
-# ---------------------------------------------------------------------
-LOAD_TO_LAKEHOUSE_SNIPPET = """
-df = spark.read.option("header", True).option("inferSchema", True) \\
-    .csv("Files/bronze/trends/trends_raw.csv")
 
-df.write.format("delta").mode("overwrite") \\
-    .saveAsTable("bronze_trends")
-
-display(spark.sql('''
-    SELECT brand_name, COUNT(*) AS rows, MAX(full_date) AS latest
-    FROM bronze_trends
-    GROUP BY brand_name
-'''))
-"""
