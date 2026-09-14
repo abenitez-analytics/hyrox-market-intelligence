@@ -1,21 +1,8 @@
 """
-cluster_cities.py
---------------------
-Phase 4 -- ML layer, part 2: cluster HYROX's 72 scheduled events by
+ML layer, part 2: cluster HYROX's 121 scheduled events by
 "market maturity / saturation" to support the capacity-and-crowding
 narrative -- distinguishing established, high-density markets from
 early-stage expansion markets.
-
-Honest note on features: we don't have participant counts or venue
-capacity (not available from the scraped source), so this can't be a
-literal "sold-out speed" model. Instead it clusters on what we DO have:
-registration status (a real proxy for demand urgency) and how many
-other HYROX events share the same country (a real proxy for market
-saturation). That's a legitimate, defensible clustering -- just be
-clear in your write-up about what it is and isn't measuring.
-
-Input: fact_events.csv (as exported from the Fabric Warehouse)
-Output: city_clusters.csv -- cluster assignment + label per event.
 """
 
 import pandas as pd
