@@ -1,13 +1,10 @@
 -- ============================================================
 -- Populate fact_financials -- HYROX only, since it's the only brand
 -- with published revenue/valuation estimates. XENOM, ATHX Games, and
--- CrossFit are private and haven't disclosed comparable figures --
--- leaving them out is more honest than guessing, and "no public
--- financial disclosure yet" is itself a data point about company
--- maturity worth noting in your write-up.
+-- CrossFit are private and haven't disclosed comparable figures.
 --
 -- Every number here is a press ESTIMATE, not audited disclosure --
--- that's why source_note exists on every row. Cite it in your report.
+-- that's why source_note exists on every row. 
 -- ============================================================
 
 INSERT INTO fact_financials (
