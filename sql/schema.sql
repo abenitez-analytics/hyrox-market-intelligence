@@ -1,5 +1,5 @@
 -- ============================================================
--- HYROX Competitive Fitness BI Project — Star Schema
+-- — Star Schema
 -- Microsoft Fabric Warehouse
 -- ============================================================
 
