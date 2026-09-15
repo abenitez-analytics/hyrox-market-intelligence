@@ -12,9 +12,7 @@ ALTER TABLE fact_event ADD venue_name_raw VARCHAR(255) NULL;
 -- 2. Populate fact_event from bronze_hyrox_events, joining to
 --    dim_city, dim_brand, dim_date.
 --
---    ADJUST THE CROSS-DATABASE REFERENCE if needed: replace
---    bronze_hyrox_events below with YourLakehouseName.dbo.bronze_hyrox_events
---    if the Warehouse can't resolve the Lakehouse table by short name.
+--    WITH CROSS-DATABASE REFERENCE:
 -- ============================================================
 
 INSERT INTO fact_event (
@@ -33,16 +31,13 @@ SELECT
     b.sold_out_flag,
     b.status                                              AS registration_status,
     b.venue                                               AS venue_name_raw
-FROM bronze_hyrox_events b
+FROM hyrox_lakehouse.dbo.bronze_hyrox_events_v2 b
 LEFT JOIN dim_brand br ON br.brand_name = b.brand_name
 LEFT JOIN dim_city  c  ON c.city_name   = b.city
 LEFT JOIN dim_date  d  ON d.date_id     = CAST(FORMAT(b.start_date, 'yyyyMMdd') AS INT);
 
 -- ============================================================
--- 3. VALIDATION -- run this and check for zero unmatched rows.
---    Nonzero unmatched_city usually means an accented-character
---    mismatch (São Paulo, Düsseldorf, Gdańsk, Poznań are the likely
---    suspects) between the scraped city text and dim_city.city_name.
+-- 3. VALIDATION -- 
 -- ============================================================
 SELECT
     COUNT(*)                                              AS total_rows,
@@ -53,6 +48,6 @@ FROM fact_event;
 
 -- If unmatched_city > 0, find exactly which cities failed to match:
 SELECT DISTINCT b.city
-FROM bronze_hyrox_events b
+FROM hyrox_lakehouse.dbo.bronze_hyrox_events_v2 b
 LEFT JOIN dim_city c ON c.city_name = b.city
 WHERE c.city_id IS NULL;
