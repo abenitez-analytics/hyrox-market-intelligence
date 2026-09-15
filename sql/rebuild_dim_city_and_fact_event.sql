@@ -37,10 +37,7 @@ INSERT INTO dim_city (city_id, city_name, country, region) VALUES
 -- ============================================================
 -- 2. Wipe the old, incomplete fact_event and reload from the
 --    corrected, full-year dataset (bronze_hyrox_events_v2).
---    Upload hyrox_events_rebuilt.csv to Files/bronze/events/ in
---    your Lakehouse and load it as bronze_hyrox_events_v2 first
---    (same LOAD_TO_LAKEHOUSE_SNIPPET pattern as before, just a
---    new table name so we don't lose the old one for comparison).
+--  
 -- ============================================================
 
 TRUNCATE TABLE fact_event;
@@ -61,12 +58,12 @@ SELECT
     b.sold_out_flag,
     b.registration_status,
     NULL AS venue_name_raw   -- venue data isn't reliably available from this source
-FROM bronze_hyrox_events_v2 b
+FROM hyrox_lakehouse.dbo.bronze_hyrox_events_v2 b
 LEFT JOIN dim_brand br ON br.brand_name = b.brand_name
 LEFT JOIN dim_city  c  ON c.city_name   = b.city;
 
 -- ============================================================
--- 3. Validation -- same pattern as before
+-- 3. Validation -- 
 -- ============================================================
 SELECT
     COUNT(*)                                              AS total_rows,
@@ -75,7 +72,7 @@ SELECT
 FROM fact_event;
 
 SELECT DISTINCT b.city
-FROM bronze_hyrox_events_v2 b
+FROM hyrox_lakehouse.dbo.bronze_hyrox_events_v2 b
 LEFT JOIN dim_city c ON c.city_name = b.city
 WHERE c.city_id IS NULL;
 
