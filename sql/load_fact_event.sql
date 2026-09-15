@@ -31,7 +31,7 @@ SELECT
     b.sold_out_flag,
     b.status                                              AS registration_status,
     b.venue                                               AS venue_name_raw
-FROM hyrox_lakehouse.dbo.bronze_hyrox_events_v2 b
+FROM hyrox_lakehouse.dbo.bronze_hyrox_events b
 LEFT JOIN dim_brand br ON br.brand_name = b.brand_name
 LEFT JOIN dim_city  c  ON c.city_name   = b.city
 LEFT JOIN dim_date  d  ON d.date_id     = CAST(FORMAT(b.start_date, 'yyyyMMdd') AS INT);
@@ -48,6 +48,6 @@ FROM fact_event;
 
 -- If unmatched_city > 0, find exactly which cities failed to match:
 SELECT DISTINCT b.city
-FROM hyrox_lakehouse.dbo.bronze_hyrox_events_v2 b
+FROM hyrox_lakehouse.dbo.bronze_hyrox_events b
 LEFT JOIN dim_city c ON c.city_name = b.city
 WHERE c.city_id IS NULL;
