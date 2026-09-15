@@ -1,7 +1,5 @@
 -- ============================================================
--- Populate dim_city -- all 72 cities from the 2026 HYROX event calendar
--- country/region compiled manually; lat/long and population left NULL
--- for now (add later if you want map visuals in Power BI)
+-- Populate dim_city -- 
 -- ============================================================
 
 INSERT INTO dim_city (city_id, city_name, country, region) VALUES
