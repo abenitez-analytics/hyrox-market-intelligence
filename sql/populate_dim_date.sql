@@ -1,10 +1,9 @@
 -- ============================================================
 -- Populate dim_date: a standard date spine, 2020-01-01 to 2027-12-31
 -- Covers Trends history (5y back) through the full 2026 event calendar
--- Run this in your Fabric Warehouse (T-SQL)
+-- 
 --
--- NOTE: Fabric Warehouse does NOT support recursive CTEs (confirmed
--- platform limitation, not just a preview gap). This uses the standard
+-- NOTE: Fabric Warehouse does NOT support recursive CTEs. This uses the standard
 -- non-recursive workaround: build a "numbers" set via cross-joined
 -- small VALUES lists, then DATEADD off a base date.
 -- ============================================================
