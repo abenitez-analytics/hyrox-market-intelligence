@@ -1,9 +1,8 @@
 -- ============================================================
 -- Populate fact_trends by FULL OUTER JOINing the two Bronze sources
--- on (date_id, brand_name) -- a date/brand may have search data,
--- news data, both, or (for XENOM, pending its backfill) neither yet.
+-- on (date_id, brand_name) --
 --
--- ADJUST CROSS-DATABASE REFERENCES if needed, same as fact_event.
+-- WITH CROSS-DATABASE REFERENCES IN FABRIC
 -- ============================================================
 
 INSERT INTO fact_trends (date_id, brand_id, search_index, social_mentions, news_mentions, sentiment_score)
@@ -14,8 +13,8 @@ SELECT
     NULL                                    AS social_mentions,  -- not collected yet
     n.news_mentions,
     NULL                                    AS sentiment_score   -- Phase 4 (ML layer)
-FROM bronze_trends t
-FULL OUTER JOIN bronze_news_mentions n
+FROM hyrox_lakehouse.dbo.bronze_trends t
+FULL OUTER JOIN hyrox_lakehouse.dbo.bronze_news_mentions n
     ON t.date_id = n.date_id AND t.brand_name = n.brand_name
 INNER JOIN dim_brand br
     ON br.brand_name = COALESCE(t.brand_name, n.brand_name);
